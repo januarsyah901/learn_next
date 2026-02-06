@@ -12,7 +12,7 @@ const Footer = () => {
                         <Link href="/" className="inline-block">
                             <div className="flex items-center gap-2">
                                 <Image src="/icon.png" alt="logo" width={40} height={40} priority className="brightness-110" />
-                                <span className="text-2xl font-bold text-white tracking-tight">LearnNext</span>
+                                <span className="text-2xl font-bold text-white tracking-tight">Janbook</span>
                             </div>
                         </Link>
                         <p className="text-sm leading-relaxed text-gray-400 max-w-xs">
@@ -58,10 +58,10 @@ const Footer = () => {
                             <input
                                 type="email"
                                 placeholder="Email address"
-                                className="bg-gray-800 border border-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-sm"
+                                className="bg-gray-800 border border-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all text-sm"
                                 required
                             />
-                            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all active:scale-95 shadow-lg shadow-blue-900/20">
+                            <button className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg transition-all active:scale-95 shadow-lg shadow-orange-950/20">
                                 Subscribe
                             </button>
                         </form>
@@ -70,7 +70,7 @@ const Footer = () => {
 
                 {/* Bottom Bar */}
                 <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} LearnNext. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Janbook. All rights reserved.</p>
                     <div className="flex gap-6">
                         <Link href="#" className="hover:text-white transition-colors">Privacy</Link>
                         <Link href="#" className="hover:text-white transition-colors">Terms</Link>
@@ -96,7 +96,7 @@ const FooterLink = ({ href, children }: { href: string; children: React.ReactNod
 const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => (
     <Link
         href={href}
-        className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-300"
+        className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-orange-400 hover:text-white transition-all duration-300"
     >
         {icon}
     </Link>

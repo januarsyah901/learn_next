@@ -2,7 +2,7 @@ import HeaderSection from "@/component/header-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About Us - Janbook",
+    title: "About Us",
     description: "Learn more about Janbook and our commitment to luxury and comfort.",
 }
 const AboutPage = () => {

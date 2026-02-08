@@ -1,7 +1,14 @@
 import React from 'react';
+import {signIn} from "@/auth";
 
 export const LoginGoogleButton = () => {
     return (
+        <form action={
+            async () => {
+                'use server';
+                await signIn('google');
+            }
+        }>
         <button
             className="flex items-center justify-center gap-3 px-6 py-2.5 border border-gray-300 rounded-lg text-gray-700 font-medium bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 shadow-sm active:scale-95"
         >
@@ -29,5 +36,6 @@ export const LoginGoogleButton = () => {
             </svg>
             <span className="text-sm sm:text-base">Sign in with Google</span>
         </button>
+        </form>
     );
 };
